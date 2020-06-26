@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2E5D06BE-966C-4C4D-A715-EDEA311DAC71}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Gestion_Service_ENSA</RootNamespace>
+    <AssemblyName>Gestion_Service_ENSA</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Design.1.2.0.3\lib\net40\MetroFramework.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminAdminScolarite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAdminScolarite.Designer.cs">
+      <DependentUpon>AdminAdminScolarite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrateur.Designer.cs">
+      <DependentUpon>Administrateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEtud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminEtud.Designer.cs">
+      <DependentUpon>AdminEtud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminProf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminProf.Designer.cs">
+      <DependentUpon>AdminProf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminScolAbsence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminScolAbsence.Designer.cs">
+      <DependentUpon>AdminScolAbsence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminScolarGroupe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminScolarGroupe.Designer.cs">
+      <DependentUpon>AdminScolarGroupe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminScolarModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminScolarModule.Designer.cs">
+      <DependentUpon>AdminScolarModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminScolarSpecialite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminScolarSpecialite.Designer.cs">
+      <DependentUpon>AdminScolarSpecialite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminScolEtud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminScolEtud.Designer.cs">
+      <DependentUpon>AdminScolEtud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminScolGlob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminScolGlob.Designer.cs">
+      <DependentUpon>AdminScolGlob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminScolNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminScolNote.Designer.cs">
+      <DependentUpon>AdminScolNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminScolProf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminScolProf.Designer.cs">
+      <DependentUpon>AdminScolProf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AffectationModEtud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AffectationModEtud.Designer.cs">
+      <DependentUpon>AffectationModEtud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AffectationModEtudAdminScol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AffectationModEtudAdminScol.Designer.cs">
+      <DependentUpon>AffectationModEtudAdminScol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AffectationProfMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AffectationProfMod.Designer.cs">
+      <DependentUpon>AffectationProfMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connection.cs" />
+    <Compile Include="EtudiantAbsenceExam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EtudiantAbsenceExam.Designer.cs">
+      <DependentUpon>EtudiantAbsenceExam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prof.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prof.Designer.cs">
+      <DependentUpon>Prof.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdminAdminScolarite.resx">
+      <DependentUpon>AdminAdminScolarite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrateur.resx">
+      <DependentUpon>Administrateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminEtud.resx">
+      <DependentUpon>AdminEtud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminProf.resx">
+      <DependentUpon>AdminProf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminScolAbsence.resx">
+      <DependentUpon>AdminScolAbsence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminScolarGroupe.resx">
+      <DependentUpon>AdminScolarGroupe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminScolarModule.resx">
+      <DependentUpon>AdminScolarModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminScolarSpecialite.resx">
+      <DependentUpon>AdminScolarSpecialite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminScolEtud.resx">
+      <DependentUpon>AdminScolEtud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminScolGlob.resx">
+      <DependentUpon>AdminScolGlob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminScolNote.resx">
+      <DependentUpon>AdminScolNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminScolProf.resx">
+      <DependentUpon>AdminScolProf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AffectationModEtud.resx">
+      <DependentUpon>AffectationModEtud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AffectationModEtudAdminScol.resx">
+      <DependentUpon>AffectationModEtudAdminScol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AffectationProfMod.resx">
+      <DependentUpon>AffectationProfMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EtudiantAbsenceExam.resx">
+      <DependentUpon>EtudiantAbsenceExam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prof.resx">
+      <DependentUpon>Prof.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DatabaseGestionService.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DatabaseGestionService_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>DatabaseGestionService.mdf</DependentUpon>
+    </Content>
+    <Content Include="MetroFramework.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
